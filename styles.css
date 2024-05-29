@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; 
+    color: #333;
+    overflow-y: scroll; 
+}
+
+header {
+    background-color: #00796b; 
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.nav-flex-row {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav-flex-row li {
+    margin: 0 15px;
+}
+
+.nav-flex-row li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #004d40; 
+    border-radius: 5px;
+}
+
+.nav-flex-row li a:hover {
+    background-color: #00695c; 
+}
+
+.section-intro {
+    height: 50vh;
+    background-image: url('bantayan 4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.intro-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro-content p {
+    font-size: 1.5em;
+}
+
+.container {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+article {
+    flex: 2;
+}
+
+article h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00796b; 
+}
+
+article p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.image-gallery img {
+    width: calc(50% - 50px); 
+    height: auto;
+    border-radius: 10px;
+
+}.image-gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.image-gallery2 img {
+    width: calc(60% - 60px); 
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+aside {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h5 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00796b; 
+}
+
+.card h6 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #00796b; 
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #00796b; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em; 
+    color: #131212; 
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .section-intro {
+        height: 60vh;
+    }
+
+    .intro-content h1 {
+        font-size: 2em;
+    }
+
+    .intro-content p {
+        font-size: 1em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image-gallery img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-intro {
+        height: 70vh;
+    }
+
+    .intro-content h1 {
+        font-size: 1.5em;
+    }
+
+    .intro-content p {
+        font-size: 0.8em;
+    }
+}
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
